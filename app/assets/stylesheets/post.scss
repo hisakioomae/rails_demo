@@ -1,3 +1,15 @@
 // Place all the styles related to the post controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.new textarea {
+  font-size: 20px;
+  padding: 10px;
+  min-height: 140px;
+  border: 1px solid rgb(216, 218, 223);
+  resize: none;
+}
+
+.new{
+  width: 90%;
+  margin: 0 auto;
+}
