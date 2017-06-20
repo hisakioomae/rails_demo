@@ -16,14 +16,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">B5 Laboratory</a>
+          <a class="navbar-brand" href="/">B5 Laboratory</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="work.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li> <%= link_to("about", "/about") %> </li>
+            <li> <%= link_to("勉強会一覧", "/post/index") %> </li>
+            <li> <%= link_to("新規投稿", "/post/new") %> </li>
+            <li> <%= link_to("contact", "/contact") %> </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
