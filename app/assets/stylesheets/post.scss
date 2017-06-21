@@ -13,3 +13,40 @@
   width: 90%;
   margin: 0 auto;
 }
+
+.form_coment {
+color: #010079;
+text-shadow: 0 0 5px white;
+padding: 0.3em 0.5em;
+background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
+
+.index_coment h1 {
+position: relative;
+padding: 0.6em;
+background: -webkit-repeating-linear-gradient(-45deg, #fff5df, #fff5df 4px,#ffe4b1 3px, #ffe4b1 8px);
+background: repeating-linear-gradient(-45deg, #fff5df, #fff5df 4px,#ffe4b1 3px, #ffe4b1 8px);
+border-radius: 7px;
+}
+
+.index_coment h1:after {
+position: absolute;
+content: '';
+top: 100%;
+left: 30px;
+border: 15px solid transparent;
+border-top: 15px solid #ffebbe;
+width: 0;
+height: 0;
+}
+
+.index{
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  margin-left: 20px;
+  width: 30%;
+  background: #f4f4f4;
+  border-left: solid 6px #5bb7ae;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
