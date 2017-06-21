@@ -4,6 +4,6 @@
 
 <% @coments.each do |coment| %>
 <div class="index">
-<%= coment.content %>
+<%= link_to(coment.content, "/post/#{coment.id}") %>
 </div>
 <% end %>
