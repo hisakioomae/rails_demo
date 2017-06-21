@@ -1,1 +1,7 @@
 <h1>勉強会での資料やみんなのコメントを載せたい</h1>
+
+<div class="index">
+<% @coments.each do |coment| %>
+<%= coment.content %>
+<% end %>
+</div>

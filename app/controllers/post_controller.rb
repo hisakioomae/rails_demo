@@ -1,7 +1,9 @@
 class PostController < ApplicationController
   def index
+    @coments = Coment.all.order(created_at: :desc)
   end
   def new
+    @coment = Coment.new
 
   end
 
