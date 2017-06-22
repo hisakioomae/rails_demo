@@ -16,6 +16,7 @@ class PostController < ApplicationController
     @coment = Coment.new(content: params[:content])
     if @coment.save
     redirect_to("/post/index")
+    flash[:notice] = "コメントをを投稿しました"
   else
     render("/post/new")
   end
@@ -31,6 +32,7 @@ class PostController < ApplicationController
     @coment.content = params[:content]
     if @coment.save
       redirect_to("/post/index")
+      flash[:notice] = "コメント内容を編集しました"
     else
       render("post/edit")
     end
@@ -41,5 +43,6 @@ class PostController < ApplicationController
     @coment = Coment.find_by(id: params[:id])
     @coment.destroy
     redirect_to("/post/index")
+    flash[:notice] = "コメントを削除しました"
   end
 end
