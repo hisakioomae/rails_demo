@@ -7,6 +7,7 @@
   min-height: 140px;
   border: 1px solid rgb(216, 218, 223);
   resize: none;
+  width: 40%;
 }
 
 .new{
@@ -20,6 +21,9 @@ text-shadow: 0 0 5px white;
 padding: 0.3em 0.5em;
 background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
 background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+margin-left: 30px;
+width: 25%;
+text-align: center;
 }
 
 .index_coment h1 {
@@ -28,6 +32,9 @@ padding: 0.6em;
 background: -webkit-repeating-linear-gradient(-45deg, #fff5df, #fff5df 4px,#ffe4b1 3px, #ffe4b1 8px);
 background: repeating-linear-gradient(-45deg, #fff5df, #fff5df 4px,#ffe4b1 3px, #ffe4b1 8px);
 border-radius: 7px;
+margin-left: 30px;
+width: 25%;
+text-align: center;
 }
 
 .index_coment h1:after {
@@ -49,4 +56,12 @@ height: 0;
   background: #f4f4f4;
   border-left: solid 6px #5bb7ae;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+.edit_header h1 {
+border-bottom: double 5px #FFC778;
+margin-left: 30px;
+width: 15%;
+text-align: center;
+/*線の種類（二重線）太さ 色*/
 }

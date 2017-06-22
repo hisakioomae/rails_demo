@@ -7129,6 +7129,7 @@ height: 4px;
 background: -moz-linear-gradient(to right, rgb(230, 90, 90), transparent);
 background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
 background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+width: 40%;
 }
 }
 
@@ -7171,4 +7172,9 @@ width: 100%;
 #img_study li {
   display: table-cell;
   vertical-align: middle;
+}
+
+.about_img{
+  width: 90%;
+  margin: 20px;
 }
