@@ -22,6 +22,18 @@ class PostController < ApplicationController
   end
 
   def edit
+    @coment = Coment.find_by(id: params[:id])
+
+  end
+
+  def update
+    @coment = Coment.find_by(id: params[:id])
+    @coment.content = params[:content]
+    if @coment.save
+      redirect_to("/post/index")
+    else
+      render("post/edit")
+    end
 
   end
 
