@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'users/index'
+  get 'users/index' => "users#index"
 
   get "contact" => "home#contact"
   get 'post/index' => "post#index"
