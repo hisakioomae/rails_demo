@@ -21,4 +21,19 @@ class UsersController < ApplicationController
       flash[:notice] = "ユーザー登録が完了しました"
     end
   end
+
+  def edit
+    @user = User.find_by(id: params[:id])
+  end
+
+  def update
+    @user = User.find_by(id: params[:id])
+    @user.name = params[:name]
+    @user.email = params[:email]
+
+    if @user.save
+      redirect_to("/users/#{@user.id}")
+      flash[:notice] = "ユーザー情報を編集しました"
+    end
+  end
 end

@@ -260,10 +260,9 @@
  .flash {
    padding: 0.5em 1em;
    margin: 0 auto;
-   color: #ff7d6e;
-   background: #ffebe9;
-   border-top: solid 10px #ff7d6e;
+   color: #000000;
+   background: #afeeee;
    text-align: center;
-   width: 50%;
+   /*width: 50%;*/
 
  }
