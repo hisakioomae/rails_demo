@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'users/index' => "users#index"
   get 'users/new' => "users#new"
   get "users/:id" => "users#show"
+  post "users/create" => "users#create"
 
   get "contact" => "home#contact"
   get 'post/index' => "post#index"
