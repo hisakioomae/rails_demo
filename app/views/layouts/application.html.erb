@@ -20,6 +20,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+            <li> <%= session[:user_id] %></li>
             <li> <%= link_to("about", "/about") %> </li>
             <li> <%= link_to("勉強会一覧", "/post/index") %> </li>
             <li> <%= link_to("新規投稿", "/post/new") %> </li>
