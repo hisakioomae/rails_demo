@@ -21,7 +21,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <% if @current_user %>
-            <li> <%= link_to(@current_user.name) %></li>
+            <li> <%= link_to(@current_user.name, "/users/#{@current_user.id}") %></li>
             <li> <%= link_to("勉強会一覧", "/post/index") %> </li>
             <li> <%= link_to("新規投稿", "/post/new") %> </li>
             <li> <%= link_to("ユーザー一覧", "/users/index")%></li>
