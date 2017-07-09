@@ -15,7 +15,7 @@ class PostController < ApplicationController
   end
 
   def create
-    @coment = Coment.new(content: params[:content])
+    @coment = Coment.new(content: params[:content], user_id: @current_user.id)
     if @coment.save
     redirect_to("/post/index")
     flash[:notice] = "コメントをを投稿しました"
