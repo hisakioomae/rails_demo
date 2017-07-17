@@ -11,7 +11,7 @@ class PostController < ApplicationController
 
   def show
     @coment = Coment.find_by(id: params[:id])
-    @user = User.find_by(id: @coment.user_id)
+    @user = @coment.user
 
   end
 
