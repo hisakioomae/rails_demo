@@ -7,8 +7,9 @@
 <div class="index">
 <%= @coment.content %>
 </div>
+<% if @coment.user_id == @current_user.id %>
 <div class="edit_link">
   <%= link_to("編集", "/post/#{@coment.id}/edit") %>
   <%= link_to("削除", "/post/#{@coment.id}/destroy", {method: "post"}) %>
-
 </div>
+<% end %>
