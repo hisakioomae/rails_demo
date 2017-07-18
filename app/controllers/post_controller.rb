@@ -1,5 +1,6 @@
 class PostController < ApplicationController
   before_action :authenticate_user
+  before_action :ensure_correct_user, {only: [:edit, :update, :destroy]}
 
   def index
     @coments = Coment.all.order(created_at: :desc)
@@ -47,5 +48,13 @@ class PostController < ApplicationController
     @coment.destroy
     redirect_to("/post/index")
     flash[:notice] = "コメントを削除しました"
+  end
+
+  def ensure_correct_user
+    @coment = Coment.find_by(id: params[:id])
+    if @coment.user_id != @current_user.id
+      flash[:notice] = "権限がありません"
+      redirect_to("/post/index")
+    end
   end
 end
