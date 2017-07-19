@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  post "likes/:post_id/create" => "likes/#create"
+
   get "login" => "users#login_form"
   post "login" => "users#login"
   post "logout" => "users#logout"
