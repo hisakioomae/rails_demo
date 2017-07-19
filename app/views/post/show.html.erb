@@ -7,6 +7,11 @@
 <div class="index">
 <%= @coment.content %>
 </div>
+<% if Like.find_by(user_id: @current_user.id, post_id: @coment.id) %>
+いいね！済み
+<% else %>
+いいね！していません
+<% end %>
 <% if @coment.user_id == @current_user.id %>
 <div class="edit_link">
   <%= link_to("編集", "/post/#{@coment.id}/edit") %>
