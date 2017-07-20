@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  post "likes/:post_id/create" => "likes/#create"
+  post "likes/:coment_id/create" => "likes/#create"
 
   get "login" => "users#login_form"
   post "login" => "users#login"
@@ -14,13 +14,13 @@ Rails.application.routes.draw do
   post "users/:id/update" => "users#update"
 
   get "contact" => "home#contact"
-  get 'post/index' => "post#index"
-  get "post/new" => "post#new"
-  get "post/:id" => "post#show"
-  post "post/create" => "post#create"
-  get "post/:id/edit" => "post#edit"
-  post "post/:id/update" => "post#update"
-  post "post/:id/destroy" => "post#destroy"
+  get 'posts/index' => "posts#index"
+  get "posts/new" => "posts#new"
+  get "posts/:id" => "posts#show"
+  post "posts/create" => "posts#create"
+  get "posts/:id/edit" => "posts#edit"
+  post "posts/:id/update" => "posts#update"
+  post "posts/:id/destroy" => "posts#destroy"
 
   get '/' => 'home#top'
   get "about" => "home#about"
