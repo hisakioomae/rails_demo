@@ -4,6 +4,6 @@ class User < ApplicationRecord
   validates :password, {presence: true}
 
   def posts
-    return Coment.where(user_id: self.id)
+    return Post.where(user_id: self.id)
   end
 end
