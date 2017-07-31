@@ -17,11 +17,6 @@ ActiveRecord::Schema.define(version: 20170726071136) do
     t.integer "post_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-<<<<<<< HEAD
-    t.integer "user_id"
-  end
-
-=======
   end
 
   create_table "posts", force: :cascade do |t|
@@ -31,7 +26,6 @@ ActiveRecord::Schema.define(version: 20170726071136) do
     t.integer "user_id"
   end
 
->>>>>>> e0942d2e97cf122b63d5a3b64896a6a0b623e38b
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
