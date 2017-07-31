@@ -18,3 +18,12 @@
 # Rails環境構築手順
 ローカルの環境構築で参考にしました  
 [Macで作るRails環境構築手順](https://tsuchikazu.net/mac_rail_setup/)
+<<<<<<< HEAD
+=======
+
+# 自分用
+
+[Jenkinsをインストールして使ってみよう](http://www.buildinsider.net/enterprise/jenkins/001)  
+localhost:8080に繋がらないとき  
+`java -jar /usr/local/opt/jenkins/libexec/jenkins.war`
+>>>>>>> e0942d2e97cf122b63d5a3b64896a6a0b623e38b

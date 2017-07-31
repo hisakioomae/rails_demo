@@ -1,0 +1,12 @@
+<div class="index_coment">
+<h1>コメント一覧</h1>
+
+
+<% @posts.each do |post| %>
+<img src="<%= "/user_images/#{post.user.image_name}" %>">
+<%= link_to(post.user.name, "/users/#{post.user.id}")%>
+<div class="index">
+<%= link_to(post.content, "/posts/#{post.id}") %>
+</div>
+<% end %>
+</div>
