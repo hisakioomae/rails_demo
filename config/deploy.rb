@@ -1,5 +1,5 @@
 # capistranoのバージョン固定
-lock '3.4.0'
+lock '3.9.0'
 
 # デプロイするアプリケーション名
 set :application, 'rails_demo'
