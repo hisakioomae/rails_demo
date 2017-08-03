@@ -1,0 +1,8 @@
+version: 0.0
+os: linux
+files:
+   - source: / # ファイル参照元ディレクトリパス
+     destination: /var/www/rails/rails_demo # ファイルコピー先ディレクトリパス
+hooks:
+    BeforeInstall: # ファイルコピー前に実行する内容
+        - location: script/before_install.sh # ファイル削除とか
